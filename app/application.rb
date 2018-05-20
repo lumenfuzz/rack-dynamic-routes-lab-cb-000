@@ -11,7 +11,7 @@ class Application
         search_term = item if item.name == search_term
       end
       if (search_term.is_a? Item)
-        resp.write "The item #{search_term.name} costs #{search-term.price}"
+        resp.write "The item #{search_term.name} costs #{search_term.price}"
         resp.status = 200
       else
         resp.write "Item not found"
